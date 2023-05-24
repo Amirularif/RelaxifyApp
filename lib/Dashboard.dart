@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:relaxify/MeditationListPage.dart';
 import 'Emoticons.dart';
 
 class Dashboard extends StatefulWidget {
@@ -284,6 +285,10 @@ class _DashboardState extends State<Dashboard>{
 
                     GestureDetector(
                       onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MeditationListPage()),
+                        );
                       },
                       child: Container(
                         padding: EdgeInsets.fromLTRB(1, 1, 5, 1),
