@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:relaxify/profile/ProfilePage.dart';
 import 'Emoticons.dart';
 
 class Dashboard extends StatefulWidget {
@@ -53,6 +54,10 @@ class _DashboardState extends State<Dashboard>{
                     //profile
                     GestureDetector(
                       onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ProfilePage()),
+                        );
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -317,8 +322,8 @@ class _DashboardState extends State<Dashboard>{
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
-                              height: 120,
-                              width: 110,
+                              height: 100,
+                              width: 100,
                               decoration: BoxDecoration(
                                   color: Colors.grey.shade300,
                                   borderRadius: BorderRadius.circular(12)
@@ -350,8 +355,8 @@ class _DashboardState extends State<Dashboard>{
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
-                              height: 120,
-                              width: 110,
+                              height: 100,
+                              width: 100,
                               decoration: BoxDecoration(
                                   color: Colors.grey.shade300,
                                   borderRadius: BorderRadius.circular(12)
@@ -383,8 +388,8 @@ class _DashboardState extends State<Dashboard>{
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
-                              height: 120,
-                              width: 110,
+                              height: 100,
+                              width: 100,
                               decoration: BoxDecoration(
                                   color: Colors.grey.shade300,
                                   borderRadius: BorderRadius.circular(12)
@@ -413,4 +418,5 @@ class _DashboardState extends State<Dashboard>{
     );
   }
 }
+
 
