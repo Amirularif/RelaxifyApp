@@ -1,9 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:relaxify/Dashboard.dart';
-import 'package:relaxify/SignUpPage.dart';
+import 'package:relaxify/LoginPage.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class SignUpPage extends StatelessWidget {
+  const SignUpPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +15,9 @@ class LoginPage extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                //login title
+                //sign up title
                 SizedBox(height: 70),
-                Text('Log In',
+                Text('Sign Up',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
@@ -25,13 +26,57 @@ class LoginPage extends StatelessWidget {
                 ),
 
                 SizedBox(height: 10),
-                Text('Log in with your email address and password',
+                Text('Sign up for an account',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black87,
                   ),
                 ),
                 SizedBox(height: 30),
+
+                //name
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.grey.shade300),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 20.0),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Name',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 15),
+
+                //username
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.grey.shade300),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 20.0),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Username',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 15),
 
                 //email
                 Padding(
@@ -78,7 +123,30 @@ class LoginPage extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
 
-                //log in button
+                //confirm password
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.grey.shade300),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 20.0),
+                      child: TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Confirm Password',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 15),
+
+                //sign up button
                 GestureDetector(
                   onTap: (){
                     Navigator.push(
@@ -95,7 +163,7 @@ class LoginPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Center(
-                        child: Text('Log In',
+                        child: Text('Sign Up',
                           style: TextStyle(
                             color: Colors.black87,
                             fontWeight: FontWeight.bold,
@@ -108,19 +176,19 @@ class LoginPage extends StatelessWidget {
                 ),
                 SizedBox(height: 25),
 
-                //not a member? register
+                //got account? log in lerr
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Not a member?  '),
+                    Text('Already have an account?  '),
                     GestureDetector(
                       onTap: (){
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => SignUpPage()),
+                          context,
+                          MaterialPageRoute(builder: (context) => LoginPage()),
                         );
                       },
-                      child: Text('Register now',
+                      child: Text('Log In',
                         style: TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.bold,
@@ -129,7 +197,6 @@ class LoginPage extends StatelessWidget {
                     ),
                   ],
                 ),
-
               ],
             ),
           ),
