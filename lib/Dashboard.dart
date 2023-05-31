@@ -325,10 +325,12 @@ class _DashboardState extends State<Dashboard>{
                               height: 120,
                               width: 110,
                               decoration: BoxDecoration(
-                                  color: Colors.grey.shade300,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/musicwallpaper/musicposter1.jpg'),
+                                  fit: BoxFit.fill,
+                                ),
                                   borderRadius: BorderRadius.circular(12)
                               ),
-                              padding: EdgeInsets.all(12),
                             ),
                             SizedBox(
                               height: 10,
@@ -358,10 +360,12 @@ class _DashboardState extends State<Dashboard>{
                               height: 120,
                               width: 110,
                               decoration: BoxDecoration(
-                                  color: Colors.grey.shade300,
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/musicwallpaper/piano.jpg'),
+                                    fit: BoxFit.fill,
+                                  ),
                                   borderRadius: BorderRadius.circular(12)
                               ),
-                              padding: EdgeInsets.all(12),
                             ),
                             SizedBox(
                               height: 10,
@@ -391,10 +395,12 @@ class _DashboardState extends State<Dashboard>{
                               height: 120,
                               width: 110,
                               decoration: BoxDecoration(
-                                  color: Colors.grey.shade300,
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/musicwallpaper/city.jpg'),
+                                    fit: BoxFit.fill,
+                                  ),
                                   borderRadius: BorderRadius.circular(12)
                               ),
-                              padding: EdgeInsets.all(12),
                             ),
                             SizedBox(
                               height: 10,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:relaxify/MusicPlayerPage.dart';
+import 'package:video_player/video_player.dart';
+import 'package:chewie/chewie.dart';
 
 
 List<String> meditationSteps = [
@@ -20,6 +22,44 @@ class MeditationInfoPage extends StatefulWidget {
 }
 
 class _MeditationInfoPageState extends State<MeditationInfoPage> {
+  late VideoPlayerController _controller;
+  late ChewieController _chewieController;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = VideoPlayerController.asset('assets/videos/tutorial2.mp4');
+    _chewieController = ChewieController(
+      videoPlayerController: _controller,
+      autoPlay: false,
+      looping: false,
+      autoInitialize: true,
+      errorBuilder: (context, errorMessage) {
+        return Center(
+          child: Text(
+            errorMessage,
+            style: TextStyle(color: Colors.white),
+          ),
+        );
+      },
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    _chewieController.dispose();
+    super.dispose();
+  }
+
+  void _playPauseVideo() {
+    if (_controller.value.isPlaying) {
+      _controller.pause();
+    } else {
+      _controller.play();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +91,9 @@ class _MeditationInfoPageState extends State<MeditationInfoPage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () async {
+                      _playPauseVideo();
+                    },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -63,6 +105,9 @@ class _MeditationInfoPageState extends State<MeditationInfoPage> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                           padding: EdgeInsets.all(12),
+                          child: Chewie(
+                            controller: _chewieController,
+                          ),
                         ),
                       ],
                     ),
@@ -182,6 +227,7 @@ class _MeditationInfoPageState extends State<MeditationInfoPage> {
     );
   }
 }
+
 
 
 

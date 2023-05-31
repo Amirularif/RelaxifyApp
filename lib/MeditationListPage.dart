@@ -62,7 +62,10 @@ class _MeditationListPageState extends State<MeditationListPage>{
                             height: 120,
                             width: 120,
                             decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/musicwallpaper/piano.jpg'),
+                                  fit: BoxFit.fill,
+                                ),
                                 borderRadius: BorderRadius.circular(12)
                             ),
                             padding: EdgeInsets.all(12),
@@ -95,7 +98,10 @@ class _MeditationListPageState extends State<MeditationListPage>{
                             height: 120,
                             width: 120,
                             decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/musicwallpaper/city.jpg'),
+                                  fit: BoxFit.fill,
+                                ),
                                 borderRadius: BorderRadius.circular(12)
                             ),
                             padding: EdgeInsets.all(12),
@@ -136,7 +142,10 @@ class _MeditationListPageState extends State<MeditationListPage>{
                             height: 120,
                             width: 120,
                             decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/musicwallpaper/forest.jfif'),
+                                  fit: BoxFit.fill,
+                                ),
                                 borderRadius: BorderRadius.circular(12)
                             ),
                             padding: EdgeInsets.all(12),
@@ -169,7 +178,10 @@ class _MeditationListPageState extends State<MeditationListPage>{
                             height: 120,
                             width: 120,
                             decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/musicwallpaper/musicposter1.jpg'),
+                                  fit: BoxFit.fill,
+                                ),
                                 borderRadius: BorderRadius.circular(12)
                             ),
                             padding: EdgeInsets.all(12),
@@ -210,7 +222,10 @@ class _MeditationListPageState extends State<MeditationListPage>{
                             height: 120,
                             width: 120,
                             decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/musicwallpaper/tide.jpg'),
+                                  fit: BoxFit.fill,
+                                ),
                                 borderRadius: BorderRadius.circular(12)
                             ),
                             padding: EdgeInsets.all(12),
@@ -243,7 +258,10 @@ class _MeditationListPageState extends State<MeditationListPage>{
                             height: 120,
                             width: 120,
                             decoration: BoxDecoration(
-                                color: Colors.grey.shade300,
+                                image: DecorationImage(
+                                  image: AssetImage('assets/musicwallpaper/universe.jpg'),
+                                  fit: BoxFit.fill,
+                                ),
                                 borderRadius: BorderRadius.circular(12)
                             ),
                             padding: EdgeInsets.all(12),
