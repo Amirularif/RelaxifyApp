@@ -39,6 +39,9 @@ dependencies:
 
   audioplayers: ^3.0.1
   smooth_page_indicator: ^1.1.0
+  percent_indicator: ^4.2.3
+  syncfusion_flutter_charts: ^21.2.8
+  chewie: ^1.5.0
 
 
 dev_dependencies:
