@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:relaxify/MeditationListPage.dart';
+import 'package:relaxify/profile/ProfilePage.dart';
 import 'Emoticons.dart';
 
 class Dashboard extends StatefulWidget {
@@ -54,6 +55,10 @@ class _DashboardState extends State<Dashboard>{
                     //profile
                     GestureDetector(
                       onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ProfilePage()),
+                        );
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -322,8 +327,8 @@ class _DashboardState extends State<Dashboard>{
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
-                              height: 120,
-                              width: 110,
+                              height: 100,
+                              width: 100,
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('assets/musicwallpaper/musicposter1.jpg'),
@@ -357,8 +362,8 @@ class _DashboardState extends State<Dashboard>{
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
-                              height: 120,
-                              width: 110,
+                              height: 100,
+                              width: 100,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                     image: AssetImage('assets/musicwallpaper/piano.jpg'),
@@ -392,8 +397,8 @@ class _DashboardState extends State<Dashboard>{
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
-                              height: 120,
-                              width: 110,
+                              height: 100,
+                              width: 100,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                     image: AssetImage('assets/musicwallpaper/city.jpg'),
@@ -424,4 +429,5 @@ class _DashboardState extends State<Dashboard>{
     );
   }
 }
+
 
