@@ -38,7 +38,7 @@ class ProfilePage extends StatelessWidget {
                         height: 8,
                       ),
                       Text(
-                        'Hani Qamaliah',
+                        'User Name',
                         style: TextStyle(
                           color: Colors.black87,
                           fontSize: 24,
@@ -84,8 +84,8 @@ class ProfilePage extends StatelessWidget {
                           alignment: Alignment.centerLeft,
                           child: Image.asset(
                             'assets/emoticons/happy.png',
-                            width: 100,
-                            height: 100,
+                            width: 80,
+                            height: 80,
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -172,26 +172,21 @@ class ProfilePage extends StatelessWidget {
                       ],
                     ),
                   ),
+
+                  //persona avatar
                   Expanded(
                     flex: 1,
-                    child: Container(
-                      height: 400,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: Colors.grey.shade300,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      child: Center(
-                        child: Text(
-                          '3D Avatar or wtv',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: Image.asset(
+                        'assets/persona/persona3.png',
+                        width: 300,
+                        height: 400,
+                        //fit: BoxFit.cover,
                       ),
                     ),
                   ),
+
                 ],
               )
 

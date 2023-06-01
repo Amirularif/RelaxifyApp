@@ -206,15 +206,17 @@ class _DashboardState extends State<Dashboard>{
                       Positioned(
                         top: 10,
                         right: 10,
-                        width: 150, // Half the width of the grey container
+                        width: 150,
                         height: 150,
                         child: Container(
                           margin: EdgeInsets.fromLTRB(2, 2, 2, 2),
                           decoration: BoxDecoration(
-                            color: Colors.grey.shade100, // Customize the color as desired
+                            image: DecorationImage(
+                              image: AssetImage('assets/dashboardicons/focus.jpg'),
+                              fit: BoxFit.fill,
+                            ),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          // Add child widgets inside the new container
                         ),
                       ),
                       Positioned(
@@ -224,7 +226,7 @@ class _DashboardState extends State<Dashboard>{
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Ready to start the day?', // Replace with your desired text
+                              'Ready to start the day?',
                               style: TextStyle(
                                 color: Colors.black87,
                                 fontSize: 13,
@@ -331,7 +333,7 @@ class _DashboardState extends State<Dashboard>{
                               width: 100,
                               decoration: BoxDecoration(
                                 image: DecorationImage(
-                                  image: AssetImage('assets/musicwallpaper/musicposter1.jpg'),
+                                  image: AssetImage('assets/dashboardicons/med4.png'),
                                   fit: BoxFit.fill,
                                 ),
                                   borderRadius: BorderRadius.circular(12)
@@ -366,7 +368,7 @@ class _DashboardState extends State<Dashboard>{
                               width: 100,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/musicwallpaper/piano.jpg'),
+                                    image: AssetImage('assets/dashboardicons/med1.png'),
                                     fit: BoxFit.fill,
                                   ),
                                   borderRadius: BorderRadius.circular(12)
@@ -401,7 +403,7 @@ class _DashboardState extends State<Dashboard>{
                               width: 100,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage('assets/musicwallpaper/city.jpg'),
+                                    image: AssetImage('assets/dashboardicons/med8.png'),
                                     fit: BoxFit.fill,
                                   ),
                                   borderRadius: BorderRadius.circular(12)
