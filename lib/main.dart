@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:relaxify/LoginPage.dart';
+import 'package:relaxify/MeditationCompletePage.dart';
 import 'package:relaxify/MeditationListPage.dart';
 import 'Dashboard.dart';
 import 'MeditationInfoPage.dart';
