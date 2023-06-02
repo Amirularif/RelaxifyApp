@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:relaxify/LoginPage.dart';
 import 'package:relaxify/MeditationListPage.dart';
 import 'Dashboard.dart';
+import 'Focus/FocusDBoard.dart';
 import 'MeditationInfoPage.dart';
 import 'MusicPlayerPage.dart';
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Dashboard(),
+      //home: Dashboard(),
+      home: FocusDashboard(),
     );
   }
 }

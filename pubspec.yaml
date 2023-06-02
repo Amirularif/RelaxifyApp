@@ -39,6 +39,7 @@ dependencies:
 
   audioplayers: ^3.0.1
   smooth_page_indicator: ^1.1.0
+  percent_indicator: ^4.2.3
 
 
 dev_dependencies:
@@ -67,6 +68,7 @@ flutter:
     - assets/
     - assets/emoticons/
     - assets/music/
+    - assets/musicwallpaper/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

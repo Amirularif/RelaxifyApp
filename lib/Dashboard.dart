@@ -243,20 +243,28 @@ class _DashboardState extends State<Dashboard>{
                             SizedBox(height: 16),
                             Align(
                               alignment: Alignment.center,
-                              child: Container(
-                                width: 130,
-                                height: 40,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey.shade800,
-                                  borderRadius: BorderRadius.circular(18),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    'Start Focus Mode',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.bold,
+                              child: GestureDetector(
+                                onTap: (){
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => MeditationListPage()),
+                                  );
+                                },
+                                child: Container(
+                                  width: 130,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey.shade800,
+                                    borderRadius: BorderRadius.circular(18),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      'Start Focus Mode',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
                                 ),
