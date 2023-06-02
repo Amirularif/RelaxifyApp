@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:relaxify/MusicPlayerPage.dart';
+import 'package:relaxify/profile/CustomAppBar.dart';
 import 'package:video_player/video_player.dart';
 import 'package:chewie/chewie.dart';
+
+import 'SettingsPage.dart';
 
 
 List<String> meditationSteps = [
@@ -63,6 +66,18 @@ class _MeditationInfoPageState extends State<MeditationInfoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: CustomAppBar(
+        title: 'Meditation',
+        onBackButtonPressed: () {
+          Navigator.pop(context);
+        },
+        onSettingsButtonPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => SettingsPage()), // Navigate to the SettingsPage
+          );
+        },
+      ),
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.grey.shade100,
       body: SafeArea(
@@ -77,7 +92,7 @@ class _MeditationInfoPageState extends State<MeditationInfoPage> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  'Meditation Name 1',
+                  'Mindfulness',
                   style: TextStyle(
                     color: Colors.black87,
                     fontSize: 24,
@@ -176,19 +191,19 @@ class _MeditationInfoPageState extends State<MeditationInfoPage> {
                     child: Container(
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Colors.black54,
+                        color: Color(0xFF69817A),
                       ),
                       padding: EdgeInsets.all(12),
                       child: Icon(
                         Icons.play_arrow,
-                        color: Colors.grey.shade100,
+                        color: Colors.white,
                         size: 15,
                       ),
                     ),
                   ),
                   SizedBox(width: 8),
                   Text(
-                    'Music Name',
+                    'Classical Music',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
@@ -209,7 +224,10 @@ class _MeditationInfoPageState extends State<MeditationInfoPage> {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.grey.shade800,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  primary: Color(0xFF69817A),
                 ),
                 child: Text(
                   'Start',

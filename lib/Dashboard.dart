@@ -15,7 +15,7 @@ class _DashboardState extends State<Dashboard>{
   Widget build(BuildContext context) {
     return Scaffold(
         resizeToAvoidBottomInset: false,
-        backgroundColor: Colors.grey.shade100,
+        backgroundColor: const Color(0XFFF8F8F8),
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(30.0),
@@ -29,7 +29,7 @@ class _DashboardState extends State<Dashboard>{
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(
-                          height: 8,
+                          height: 20,
                         ),
                         Text(
                           'Welcome Back!',
@@ -45,7 +45,7 @@ class _DashboardState extends State<Dashboard>{
                         Text(
                           'How are you feeling today?',
                           style: TextStyle(
-                            color: Colors.grey,
+                            color: Color(0xFF69817A),
                             fontSize: 16,
                           ),
                         ),
@@ -198,8 +198,12 @@ class _DashboardState extends State<Dashboard>{
                         height: 170,
                         width: 330,
                         decoration: BoxDecoration(
-                          color: Colors.grey.shade300,
+                          color: Color(0xFFACD0C1),
                           borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                              width: 2,
+                              color: Color(0xFF69817A),
+                          ),
                         ),
                         padding: EdgeInsets.all(10),
                       ),
@@ -249,7 +253,7 @@ class _DashboardState extends State<Dashboard>{
                                 width: 130,
                                 height: 40,
                                 decoration: BoxDecoration(
-                                  color: Colors.grey.shade800,
+                                  color: Color(0xFF69817A),
                                   borderRadius: BorderRadius.circular(18),
                                 ),
                                 child: Center(
@@ -272,7 +276,7 @@ class _DashboardState extends State<Dashboard>{
                 ),
 
                 SizedBox(
-                  height: 25,
+                  height: 35,
                 ),
                 //menu title
                 Row(
@@ -302,7 +306,7 @@ class _DashboardState extends State<Dashboard>{
                         child: Text(
                           'View all >',
                           style: TextStyle(
-                            color: Colors.grey.shade800,
+                            color: Color(0xFF69817A),
                             fontSize: 14,
                           ),
                         ),
@@ -336,18 +340,21 @@ class _DashboardState extends State<Dashboard>{
                                   image: AssetImage('assets/dashboardicons/med4.png'),
                                   fit: BoxFit.fill,
                                 ),
-                                  borderRadius: BorderRadius.circular(12)
+                                  borderRadius: BorderRadius.circular(12),
+                                  border: Border.all(
+                                    width: 2,
+                                    color: Color(0xFF69817A),
+                                ),
                               ),
                             ),
                             SizedBox(
                               height: 10,
                             ),
                             Text(
-                              'Title 1',
+                              'Mindfulness',
                               style: TextStyle(
                                   color: Colors.black87,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold),
+                                  fontSize: 15),
                             ),
                           ],
                         ),
@@ -371,18 +378,21 @@ class _DashboardState extends State<Dashboard>{
                                     image: AssetImage('assets/dashboardicons/med1.png'),
                                     fit: BoxFit.fill,
                                   ),
-                                  borderRadius: BorderRadius.circular(12)
+                                  borderRadius: BorderRadius.circular(12),
+                                  border: Border.all(
+                                    width: 2,
+                                    color: Color(0xFF69817A),
+                                  ),
                               ),
                             ),
                             SizedBox(
                               height: 10,
                             ),
                             Text(
-                              'Title 2',
+                              'Movement',
                               style: TextStyle(
                                   color: Colors.black87,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold),
+                                  fontSize: 15),
                             ),
                           ],
                         ),
@@ -406,18 +416,21 @@ class _DashboardState extends State<Dashboard>{
                                     image: AssetImage('assets/dashboardicons/med8.png'),
                                     fit: BoxFit.fill,
                                   ),
-                                  borderRadius: BorderRadius.circular(12)
+                                  borderRadius: BorderRadius.circular(12),
+                                  border: Border.all(
+                                    width: 2,
+                                    color: Color(0xFF69817A),
+                                  ),
                               ),
                             ),
                             SizedBox(
                               height: 10,
                             ),
                             Text(
-                              'Title 3',
+                              'Spatial',
                               style: TextStyle(
                                   color: Colors.black87,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold),
+                                  fontSize: 15),
                             ),
                           ],
                         ),

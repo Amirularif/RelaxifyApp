@@ -29,9 +29,10 @@ class SettingsPage extends StatelessWidget {
                     ),
 
                     //settings title
-                    Center(
+                    Align(
+                      alignment: Alignment.centerLeft,
                       child: Text(
-                      'Settings',
+                      'Edit Profile Page',
                       style: TextStyle(
                         color: Colors.black87,
                         fontSize: 28,

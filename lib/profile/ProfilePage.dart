@@ -12,7 +12,7 @@ class ProfilePage extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.grey.shade100,
       appBar: CustomAppBar(
-        title: 'Relaxify',
+        title: 'User Profile',
         onBackButtonPressed: () {
           Navigator.pop(context);
         },
@@ -51,7 +51,7 @@ class ProfilePage extends StatelessWidget {
                       Text(
                         'User info and data summary',
                         style: TextStyle(
-                          color: Colors.grey,
+                          color: Color(0xFF69817A),
                           fontSize: 16,
                         ),
                       ),
@@ -151,18 +151,19 @@ class ProfilePage extends StatelessWidget {
                             );
                           },
                           child: Container(
-                            height: 25,
-                            width: 100,
+                            height: 40,
+                            width: 120,
                             decoration: BoxDecoration(
-                              color: Colors.grey.shade300,
+                              color: Color(0xFF69817A),
                               borderRadius: BorderRadius.circular(18),
                             ),
                             child: Center(
                               child: Text(
                                 'View More Data',
                                 style: TextStyle(
-                                  fontSize: 10,
+                                  fontSize: 12,
                                   fontWeight: FontWeight.bold,
+                                  color: Colors.white,
                                 ),
                               ),
                             ),
@@ -172,24 +173,23 @@ class ProfilePage extends StatelessWidget {
                       ],
                     ),
                   ),
-
+                  SizedBox(width: 10,),
                   //persona avatar
                   Expanded(
                     flex: 1,
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      child: Image.asset(
-                        'assets/persona/persona3.png',
-                        width: 300,
-                        height: 400,
-                        //fit: BoxFit.cover,
+                    child:
+                        Align(
+                        alignment: Alignment.bottomRight,
+                        child: Image.asset(
+                          'assets/persona/persona3.png',
+                          width: 300,
+                          height: 400,
+                          //fit: BoxFit.fill,
+                        ),
                       ),
-                    ),
                   ),
-
                 ],
               )
-
             ],
           ),
         ),

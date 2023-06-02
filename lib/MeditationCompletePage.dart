@@ -118,7 +118,7 @@ class _MeditationCompletePageState extends State<MeditationCompletePage> {
               SizedBox(height: 10),
 
               Container(
-                padding: EdgeInsets.fromLTRB(0,5,5,5),
+                padding: EdgeInsets.fromLTRB(5,5,5,5),
                 width: 350,
                 height: 40,
                 decoration: BoxDecoration(
@@ -161,9 +161,9 @@ class _MeditationCompletePageState extends State<MeditationCompletePage> {
                   children: [
                     Container(
                       width:350,
-                      height: 140,
+                      height: 145,
                       decoration: BoxDecoration(
-                        color: Colors.grey[300],
+                        color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       padding: EdgeInsets.all(10),
@@ -184,7 +184,7 @@ class _MeditationCompletePageState extends State<MeditationCompletePage> {
                               ),
                               linearGradient: LinearGradient(
                                 begin: Alignment.topRight,end:Alignment.bottomLeft,
-                                colors: <Color> [Colors.grey.shade800,Colors.greenAccent],
+                                colors: <Color> [Colors.green,Colors.lightGreen],
                               ),
                               circularStrokeCap: CircularStrokeCap.round,
                               rotateLinearGradient: true,
@@ -200,7 +200,7 @@ class _MeditationCompletePageState extends State<MeditationCompletePage> {
                               percent: 0.5,
                               linearGradient: LinearGradient(
                                 begin: Alignment.topRight,end:Alignment.bottomLeft,
-                                colors: <Color> [Colors.grey.shade800,Colors.blueAccent],
+                                colors: <Color> [Colors.blueAccent.shade700,Colors.blueAccent],
                               ),
                               circularStrokeCap: CircularStrokeCap.round,
                               rotateLinearGradient: true,
@@ -210,13 +210,17 @@ class _MeditationCompletePageState extends State<MeditationCompletePage> {
                             top: 0,
                             right: 2,
                             width: 200, // Half the width of the grey container
-                            height: 120,
+                            height: 125,
                             child: Container(
                               margin: EdgeInsets.fromLTRB(2, 2, 2, 2),
                               padding: EdgeInsets.all(8),
                               decoration: BoxDecoration(
                                 color: Colors.grey.shade100, // Customize the color as desired
                                 borderRadius: BorderRadius.circular(12),
+                                border: Border.all(
+                                  width: 2,
+                                  color: Color(0xFF69817A),
+                                ),
                               ),
                               child: Column(
                                 children: [
@@ -316,7 +320,7 @@ class _MeditationCompletePageState extends State<MeditationCompletePage> {
                                         width: 12,height: 12,
                                         padding: EdgeInsets.all(5),
                                         decoration: BoxDecoration(
-                                          color: Colors.greenAccent.shade400, // Customize the color as desired
+                                          color: Colors.green,
                                           borderRadius: BorderRadius.circular(3),
                                         ),
                                       ),
@@ -381,19 +385,24 @@ class _MeditationCompletePageState extends State<MeditationCompletePage> {
               SizedBox(height: 10),
               Container(
                 width: 350,
-                height: 180,
+                height: 220,
                 decoration: BoxDecoration(
-                  color: Colors.grey[300],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Center(
                   child: Container(
                       width: 330,
-                      height: 160,
+                      height: 200,
                       decoration: BoxDecoration(
                         color: Colors.grey.shade200,
                         borderRadius: BorderRadius.circular(10),
+                        border: Border.all(
+                          width: 2,
+                          color: Color(0xFF69817A),
+                        ),
                       ),
+                      padding: EdgeInsets.fromLTRB(1,10,10,1),
                       child: SfCartesianChart(
                         primaryXAxis:CategoryAxis(
                           plotBands: <PlotBand>[
@@ -441,7 +450,10 @@ class _MeditationCompletePageState extends State<MeditationCompletePage> {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.grey.shade800,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        primary: Color(0xFF69817A),
                       ),
                       child: Text('Restart'),
                     ),
@@ -456,7 +468,10 @@ class _MeditationCompletePageState extends State<MeditationCompletePage> {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.grey.shade800,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        primary: Color(0xFF69817A),
                       ),
                       child: Text('Home'),
                     ),

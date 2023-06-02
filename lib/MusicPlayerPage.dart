@@ -2,6 +2,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:relaxify/MeditationCompletePage.dart';
+import 'package:relaxify/profile/CustomAppBar.dart';
+
+import 'SettingsPage.dart';
 
 class MusicPlayerPage extends StatefulWidget {
   const MusicPlayerPage({Key? key}) : super(key: key);
@@ -91,6 +94,18 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: CustomAppBar(
+        title: 'Meditation',
+        onBackButtonPressed: () {
+          Navigator.pop(context);
+        },
+        onSettingsButtonPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => SettingsPage()), // Navigate to the SettingsPage
+          );
+        },
+      ),
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -98,60 +113,6 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [
-              SizedBox(height: 10),
-              Padding(
-                padding: EdgeInsets.zero,
-                child: Container(
-                  width: 330,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    color: Colors.grey.shade300,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        height: 150,
-                        width: 200,
-                        padding: EdgeInsets.only(left: 10),
-                        child: Stack(
-                          alignment: Alignment.center,
-                          children: [
-                            Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                '$hoursStr:$minutesStr:$secondsStr',
-                                style: TextStyle(fontSize: 30),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Container(
-                        child: ElevatedButton(
-                          onPressed: () {
-                            timerSubscription.pause();
-                            setState(() {
-                              isPaused = true;
-                            });
-                            _showConfirmationDialog();
-                            audioPlayer.stop();
-                          },
-                          style: ElevatedButton.styleFrom(
-                            primary: Colors.grey.shade800,
-                          ),
-                          child: Text('Complete'),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
               SizedBox(height: 40),
               Container(
                 width: 200,
@@ -193,8 +154,8 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                   children: [
                     Slider(
                       min: 0,
-                      activeColor: Colors.black,
-                      inactiveColor: Colors.black12,
+                      activeColor: Color(0xFF69817A),
+                      inactiveColor: Color(0xFFACD0C1),
                       thumbColor: Colors.black38,
                       max: duration.inSeconds.toDouble(),
                       value: position.inSeconds.toDouble(),
@@ -235,7 +196,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                           width: 10,
                         ),
                         CircleAvatar(
-                          backgroundColor: Colors.grey.shade700,
+                          backgroundColor: Color(0xFF69817A),
                           radius: 35,
                           child: IconButton(
                             icon: Icon(
@@ -283,6 +244,63 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                       ],
                     ),
                   ],
+                ),
+              ),
+              SizedBox(height: 50),
+              Padding(
+                padding: EdgeInsets.zero,
+                child: Container(
+                  width: 330,
+                  height: 60,
+                  decoration: BoxDecoration(
+                    color: Color(0xFFACD0C1),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 150,
+                        width: 200,
+                        padding: EdgeInsets.only(left: 10),
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                '$hoursStr:$minutesStr:$secondsStr',
+                                style: TextStyle(fontSize: 30),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        child: ElevatedButton(
+                          onPressed: () {
+                            timerSubscription.pause();
+                            setState(() {
+                              isPaused = true;
+                            });
+                            _showConfirmationDialog();
+                            audioPlayer.stop();
+                          },
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            primary: Color(0xFF69817A),
+                          ),
+                          child: Text('Complete'),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],

@@ -51,8 +51,12 @@ class _GraphCardsState extends State<GraphCards> {
         height: 490,
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
-            color: Colors.grey.shade300,
-            borderRadius: BorderRadius.circular(12)
+            color: Color(0xFFACD0C1),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              width: 2,
+              color: Color(0xFF69817A),
+          ),
         ),
         child: Column(
           //crossAxisAlignment: CrossAxisAlignment.start,
