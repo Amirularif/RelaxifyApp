@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:relaxify/profile/data_graph/BarGraph.dart';
 
 class GraphCards extends StatefulWidget {
   final String maintitle;
-  final String description;
   final String subtitle;
   final String hours1;
   final String hours2;
@@ -10,16 +10,30 @@ class GraphCards extends StatefulWidget {
   final String date;
   final String time;
 
+  final double monVal;
+  final double tueVal;
+  final double wedVal;
+  final double thuVal;
+  final double friVal;
+  final double satVal;
+  final double sunVal;
+
   const GraphCards({
     Key? key,
     required this.maintitle,
-    required this.description,
     required this.subtitle,
     required this.hours1,
     required this.hours2,
     required this.hours3,
     required this.date,
     required this.time,
+    required this.monVal,
+    required this.tueVal,
+    required this.wedVal,
+    required this.thuVal,
+    required this.friVal,
+    required this.satVal,
+    required this.sunVal,
   }) : super(key: key);
 
   @override
@@ -33,7 +47,7 @@ class _GraphCardsState extends State<GraphCards> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5),
       child: Container(
-        width: 320,
+        width: 330,
         height: 490,
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
@@ -54,21 +68,28 @@ class _GraphCardsState extends State<GraphCards> {
                 ),),
             ),
             SizedBox(
-              height: 50,
+              height: 20,
             ),
 
-            //description
+            //graph data
             Center(
-              child: Text(
-                widget.description,
-                style: TextStyle(
-                    color: Colors.black87,
-                    fontStyle: FontStyle.italic
+              child: SizedBox(
+                height: 180,
+                child: BarGraph(
+                  weeklySummary: [
+                    widget.monVal,
+                    widget.tueVal,
+                    widget.wedVal,
+                    widget.thuVal,
+                    widget.friVal,
+                    widget.satVal,
+                    widget.sunVal,
+                  ]
                 ),
               ),
             ),
             SizedBox(
-              height: 150,
+              height: 20,
             ),
 
             //sub title
@@ -133,7 +154,7 @@ class _GraphCardsState extends State<GraphCards> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(left: 45.0, right: 10.0),
+                  padding: const EdgeInsets.only(left: 50.0, right: 10.0),
                   child: Expanded(
                     flex: 1,
                     child: Column(

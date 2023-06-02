@@ -42,6 +42,7 @@ dependencies:
   percent_indicator: ^4.2.3
   syncfusion_flutter_charts: ^21.2.8
   chewie: ^1.5.0
+  fl_chart: ^0.62.0
 
 
 dev_dependencies:
@@ -70,6 +71,9 @@ flutter:
     - assets/
     - assets/emoticons/
     - assets/music/
+    - assets/persona/
+    - assets/musicwallpaper/
+    - assets/dashboardicons/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
