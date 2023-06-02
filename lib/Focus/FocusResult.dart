@@ -153,6 +153,7 @@ class _FocusResultPageState extends State<FocusResultPage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
+
                         Text(
                           'Daily',
                           style: TextStyle(
