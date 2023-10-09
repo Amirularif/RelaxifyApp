@@ -28,25 +28,25 @@ Coder: Nik Amir Zakwan
 
 Dashboard Page
 
-![dashboard](https://github.com/Amirularif/RelaxifyApp/assets/57553676/b85b926f-2eb3-4a8b-9849-4baf083c934e)
+<img src="https://github.com/Amirularif/RelaxifyApp/assets/57553676/b85b926f-2eb3-4a8b-9849-4baf083c934e" width="250" height="500">
 
 Profile Page
 
-![profile](https://github.com/Amirularif/RelaxifyApp/assets/57553676/279f3c4c-77c7-4445-87e2-9384f204860d)
+<img src="https://github.com/Amirularif/RelaxifyApp/assets/57553676/279f3c4c-77c7-4445-87e2-9384f204860d" width="250" height="500">
 
 Meditation Page
 
-![med 1](https://github.com/Amirularif/RelaxifyApp/assets/57553676/3c4dd1c4-4268-43fe-966f-1b4433ecf3dc)
-![med 4](https://github.com/Amirularif/RelaxifyApp/assets/57553676/04bf7221-91a0-4292-911a-5a2e6494d9f4)
-![med 3](https://github.com/Amirularif/RelaxifyApp/assets/57553676/5216a574-2ea1-4f59-b3ea-05a38299f604)
-![med 2](https://github.com/Amirularif/RelaxifyApp/assets/57553676/b5e52d7e-de1c-4e45-81d1-efd3b72cf1c0)
+<img src="https://github.com/Amirularif/RelaxifyApp/assets/57553676/3c4dd1c4-4268-43fe-966f-1b4433ecf3dc" width="250" height="500">
+<img src="https://github.com/Amirularif/RelaxifyApp/assets/57553676/04bf7221-91a0-4292-911a-5a2e6494d9f4" width="250" height="500">
+<img src="https://github.com/Amirularif/RelaxifyApp/assets/57553676/5216a574-2ea1-4f59-b3ea-05a38299f604" width="250" height="500">
+<img src="https://github.com/Amirularif/RelaxifyApp/assets/57553676/b5e52d7e-de1c-4e45-81d1-efd3b72cf1c0" width="250" height="500">
 
 Focus Page
 
-![focus 1](https://github.com/Amirularif/RelaxifyApp/assets/57553676/2b13df68-ac0f-4d6a-b42b-2697f067ddca)
-![focus 2](https://github.com/Amirularif/RelaxifyApp/assets/57553676/424c499b-85d7-4304-a0d3-385c4eefc31f)
-![focus 3](https://github.com/Amirularif/RelaxifyApp/assets/57553676/6d6d7cb3-641a-4788-8e5b-86a2ab86b56b)
-![focus 4](https://github.com/Amirularif/RelaxifyApp/assets/57553676/71564d2d-30b4-44c6-812f-b927ad4efd8f)
+<img src="https://github.com/Amirularif/RelaxifyApp/assets/57553676/2b13df68-ac0f-4d6a-b42b-2697f067ddca" width="250" height="500">
+<img src="https://github.com/Amirularif/RelaxifyApp/assets/57553676/424c499b-85d7-4304-a0d3-385c4eefc31f" width="250" height="500">
+<img src="https://github.com/Amirularif/RelaxifyApp/assets/57553676/6d6d7cb3-641a-4788-8e5b-86a2ab86b56b" width="250" height="500">
+<img src="https://github.com/Amirularif/RelaxifyApp/assets/57553676/71564d2d-30b4-44c6-812f-b927ad4efd8f" width="250" height="500">
 
 
 
