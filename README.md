@@ -13,11 +13,11 @@ Relaxify App is an application project developed to help people increase their f
 
 # Collaborators
 
-👦 Team Leader: [Amirul Arif](https://github.com/Amirularif/)
+👦 Frontend (Team Leader): [Amirul Arif](https://github.com/Amirularif/)
 
 👧 Designer: [Hani Qamaliah](https://github.com/ricegummy/)
 
-👦 Coder: [Nik Amir Zakwan](https://github.com/astralkizuna/)
+👦 Backend: [Nik Amir Zakwan](https://github.com/astralkizuna/)
 
 # Function of the Application
 
